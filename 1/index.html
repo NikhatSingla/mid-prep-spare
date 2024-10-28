@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tweet Engagement Predictor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Tweet Engagement Predictor</h1>
+        <nav>
+            <a href="#predict-likes">Predict Tweet Likes</a>
+            <a href="#generate-tweets">Generate Engaging Tweets</a>
+            <a href="#how-it-works">How It Works</a>
+        </nav>
+    </header>
+    <main>
+        <!-- Predict Tweet Likes Section -->
+        <section id="predict-likes">
+            <h2>Predict Tweet Likes</h2>
+            <textarea id="tweet-content" placeholder="Enter tweet content here..."></textarea>
+            <label for="target-audience">Target Audience</label>
+            <select id="target-audience">
+                <option value="general">General</option>
+                <option value="tech">Tech Enthusiasts</option>
+                <option value="sports">Sports Fans</option>
+            </select>
+            <button onclick="predictLikes()">Predict Likes</button>
+            <div id="prediction-result"></div>
+        </section>
+
+        <!-- Generate Engaging Tweets Section -->
+        <section id="generate-tweets">
+            <h2>Generate Engaging Tweets</h2>
+            <label for="engagement-level">Desired Engagement Level</label>
+            <input type="range" id="engagement-level" min="0" max="5">
+            <label for="media-type">Include Media</label>
+            <select id="media-type">
+                <option value="none">None</option>
+                <option value="image">Image</option>
+                <option value="video">Video</option>
+            </select>
+            <button onclick="generateTweet()">Generate Tweet</button>
+            <div id="generated-tweet"></div>
+        </section>
+
+        <!-- How It Works Section -->
+        <section id="how-it-works">
+            <h2>How It Works</h2>
+            <p>Our model uses BERTweet embeddings and various metrics to predict engagement levels for tweets and generate content optimized for specific audience types.</p>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+</body>
+</html>

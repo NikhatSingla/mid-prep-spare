@@ -1,0 +1,94 @@
+/* General styling */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f8fa;
+}
+
+header {
+    background-color: #1da1f2;
+    color: white;
+    padding: 1em;
+    text-align: center;
+}
+
+header nav a {
+    color: white;
+    margin: 0 1em;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 2em;
+}
+
+section {
+    width: 100%;
+    max-width: 600px;
+    margin-bottom: 2em;
+    padding: 1em;
+    border: 1px solid #e1e8ed;
+    border-radius: 5px;
+    background-color: white;
+}
+
+h2 {
+    margin-top: 0;
+    color: #1da1f2;
+}
+
+/* Tweet-like input styling */
+.tweet-box {
+    border: 1px solid #e1e8ed;
+    border-radius: 8px;
+    padding: 1em;
+    background-color: #ffffff;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.tweet-input,
+.tweet-textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #e1e8ed;
+    border-radius: 20px;
+    margin-bottom: 0.5em;
+    font-size: 14px;
+    outline: none;
+    box-sizing: border-box;
+}
+
+.tweet-textarea {
+    resize: none;
+    height: 100px;
+}
+
+button {
+    background-color: #1da1f2;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 20px;
+    cursor: pointer;
+    font-size: 14px;
+}
+
+button:hover {
+    background-color: #0d8ddb;
+}
+
+/* Results box styling */
+.result-box {
+    margin-top: 1em;
+    padding: 10px;
+    border: 1px solid #e1e8ed;
+    background-color: #f5f8fa;
+    border-radius: 5px;
+    font-size: 14px;
+    color: #333;
+}

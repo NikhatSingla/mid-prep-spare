@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tweet Engagement Predictor</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Tweet Engagement Predictor</h1>
+        <nav>
+            <a href="#predict-likes">Predict Tweet Likes</a>
+            <a href="#generate-tweets">Generate Engaging Tweets</a>
+            <a href="#how-it-works">How It Works</a>
+        </nav>
+    </header>
+    <main>
+        <!-- Predict Tweet Likes Section -->
+        <section id="predict-likes">
+            <h2>Predict Tweet Likes</h2>
+            <div class="tweet-box">
+                <div class="profile-info">
+                    <img src="profile-pic.png" alt="Profile Picture" class="profile-pic">
+                    <div class="tweet-input-area">
+                        <textarea id="tweet-content" placeholder="What is happening?!" class="tweet-textarea"></textarea>
+                    </div>
+                </div>
+                <div class="tweet-options">
+                    <div class="icons">
+                        <span class="icon">📷</span>
+                        <span class="icon">📹</span>
+                        <span class="icon">😊</span>
+                        <span class="icon">📅</span>
+                        <span class="icon">📍</span>
+                    </div>
+                    <button onclick="predictLikes()">Post</button>
+                </div>
+            </div>
+            <div id="prediction-result" class="result-box"></div>
+        </section>
+
+        <!-- Other sections as needed -->
+
+        <script src="script.js"></script>
+    </main>
+</body>
+</html>

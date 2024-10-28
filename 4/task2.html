@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Simulate Tweet - Task 2</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Simulate Targeted Tweet</h1>
+    <form id="simulateForm">
+      <div class="input-box">
+        <label for="company">Company Name:</label>
+        <input type="text" id="company" name="company" placeholder="Enter company name" required>
+      </div>
+      <div class="input-box">
+        <textarea id="tweetSimulation" name="tweetSimulation" placeholder="What's happening?" rows="3" required></textarea>
+      </div>
+      <button type="submit" class="btn">Simulate Engagement</button>
+    </form>
+    <div id="result"></div>
+  </div>
+
+  <script>
+    document.getElementById('simulateForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const company = document.getElementById('company').value;
+      const content = document.getElementById('tweetSimulation').value;
+
+      document.getElementById('result').innerText = 
+        `Simulated engagement for ${company}: [Model's Simulation Output Here]`;
+    });
+  </script>
+</body>
+</html>

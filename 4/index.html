@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Predict Likes - Task 1</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="container">
+    <h1>Predict Likes for Tweet</h1>
+    <form id="predictForm">
+      <div class="input-box">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" placeholder="Enter username" required>
+      </div>
+      <div class="input-box">
+        <label for="date">Date:</label>
+        <input type="date" id="date" name="date" required>
+      </div>
+      <div class="input-box">
+        <textarea id="tweetContent" name="tweetContent" placeholder="What's happening?" rows="3" required></textarea>
+      </div>
+      <button type="submit" class="btn">Predict Likes</button>
+    </form>
+    <div id="result"></div>
+  </div>
+
+  <script>
+    document.getElementById('predictForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const username = document.getElementById('username').value;
+      const date = document.getElementById('date').value;
+      const content = document.getElementById('tweetContent').value;
+
+      document.getElementById('result').innerText = 
+        `Predicted Likes for tweet by @${username} on ${date}: [Model's Prediction Output Here]`;
+    });
+  </script>
+</body>
+</html>
